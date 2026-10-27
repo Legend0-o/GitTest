@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dugb6c8lrtfog"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_7vrkn"]
+default_font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(0, 0, 0, 0)
+draw_center = false
+
+[node name="MainMenu" type="Control" unique_id=1606354584]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=180878641]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_rhts7")
+
+[node name="Container" type="VBoxContainer" parent="." unique_id=888277517]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.5
+offset_top = -79.5
+offset_right = 71.5
+offset_bottom = 79.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameName" type="Label" parent="Container" unique_id=72733026]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 40
+text = "[NAME]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" type="VBoxContainer" parent="Container" unique_id=1519678600]
+custom_minimum_size = Vector2(80, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_7vrkn")
+
+[node name="Play" type="Button" parent="Container/Controls" unique_id=89179597]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Play"
+
+[node name="Settings" type="Button" parent="Container/Controls" unique_id=549981039]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Settings"
+
+[node name="Exit" type="Button" parent="Container/Controls" unique_id=1376828426]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
+text = "Exit"

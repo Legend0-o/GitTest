@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dqnaqj8yb6hwd"]
 
-[ext_resource type="Script" uid="uid://dhojb01i6t155" path="res://scripts/player.gd" id="1_ofpvf"]
-[ext_resource type="Texture2D" uid="uid://sayuboop5pod" path="res://assets/sprites/Ralsei.png" id="2_g2els"]
+[ext_resource type="Script" uid="uid://dhojb01i6t155" path="res://scripts/player.gd" id="1_tbbt0"]
+[ext_resource type="Texture2D" uid="uid://c6dcbitosxr76" path="res://assets/sprites/Ralsei.png" id="2_x1o6x"]
 
 [sub_resource type="Animation" id="Animation_u2ulf"]
 length = 0.001
@@ -20,7 +20,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_g2els"]
 resource_name = "idle_d"
-length = 0.39999999999999997
+length = 0.1
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -41,15 +41,15 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_qhqgy"]
 resource_name = "idle_l"
-length = 0.39999999999999997
+length = 0.1
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -70,15 +70,15 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [2, 1, 2, 3]
+"values": [2]
 }
 
 [sub_resource type="Animation" id="Animation_dqkch"]
 resource_name = "idle_r"
-length = 0.39999999999999997
+length = 0.1
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -99,15 +99,15 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_qlg0r"]
 resource_name = "idle_u"
-length = 0.39999999999999997
+length = 0.1
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -128,15 +128,15 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [0, 1, 2, 3]
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_ujl30"]
 resource_name = "move_d"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -165,7 +165,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_dt7fs"]
 resource_name = "move_l"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -194,7 +194,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_ke2ow"]
 resource_name = "move_r"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -223,7 +223,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_wqfne"]
 resource_name = "move_u"
-length = 0.39999999999999997
+length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -264,67 +264,67 @@ _data = {
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(20, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(40, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(60, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(80, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(180, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(200, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(220, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(240, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(260, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(280, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(300, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1ej7"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(320, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(100, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(120, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qfm1y"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(140, 0, 19, 41)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fulsm"]
-atlas = ExtResource("2_g2els")
+atlas = ExtResource("2_x1o6x")
 region = Rect2(160, 0, 19, 41)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_81gkq"]
@@ -399,22 +399,49 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(20, 42)
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_g2els"]
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_qhqgy"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dqkch"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_g2els"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qhqgy"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_lgqqw"]
+states/End/position = Vector2(522, 100)
+states/Idle/node = SubResource("AnimationNodeBlendSpace2D_g2els")
+states/Idle/position = Vector2(427, 100)
+states/Move/node = SubResource("AnimationNodeBlendSpace2D_qhqgy")
+states/Move/position = Vector2(316, 100)
+states/Start/position = Vector2(212, 100)
+transitions = ["Move", "Idle", SubResource("AnimationNodeStateMachineTransition_dqkch"), "Start", "Move", SubResource("AnimationNodeStateMachineTransition_g2els"), "Idle", "End", SubResource("AnimationNodeStateMachineTransition_qhqgy")]
 
 [node name="Player" type="CharacterBody2D" unique_id=232032478]
 z_index = 5
 collision_layer = 2
-script = ExtResource("1_ofpvf")
+script = ExtResource("1_tbbt0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1161727006]
 libraries/ = SubResource("AnimationLibrary_sc3ue")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1881321627]
 sprite_frames = SubResource("SpriteFrames_81gkq")
-animation = &"up"
+animation = &"right"
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1090263307]
+position = Vector2(0, 10)
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=2010468847]
+tree_root = SubResource("AnimationNodeStateMachine_lgqqw")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Move/blend_position = Vector2(0, 0)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

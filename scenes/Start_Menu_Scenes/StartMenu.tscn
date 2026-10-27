@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://d2g8ag3y1fhxm"]
+
+[ext_resource type="PackedScene" uid="uid://cfi08ibj1j2ox" path="res://scenes/Start_Menu_Scenes/NameCharacterMenu.tscn" id="1_d3352"]
+[ext_resource type="PackedScene" uid="uid://dugb6c8lrtfog" path="res://scenes/Start_Menu_Scenes/MainMenu.tscn" id="2_ufv5y"]
+[ext_resource type="PackedScene" uid="uid://b2nve2sf1x6oh" path="res://scenes/Start_Menu_Scenes/SaveControlMenu.tscn" id="3_0d5ky"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtcfe"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="StartMenu" type="Node2D" unique_id=1121622889]
+
+[node name="MainMenu" parent="." unique_id=1606354584 instance=ExtResource("2_ufv5y")]
+visible = false
+
+[node name="SettingsMenu" type="Panel" parent="." unique_id=1169400972]
+visible = false
+offset_right = 480.0
+offset_bottom = 320.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_wtcfe")
+
+[node name="KeyRebindMenu" type="Panel" parent="." unique_id=2122863082]
+visible = false
+offset_right = 480.0
+offset_bottom = 320.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_wtcfe")
+
+[node name="NameCharacterMenu" parent="." unique_id=1007887519 instance=ExtResource("1_d3352")]
+visible = false
+
+[node name="SaveControlMenu" parent="." unique_id=244341834 instance=ExtResource("3_0d5ky")]
+visible = false

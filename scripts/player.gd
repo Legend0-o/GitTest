@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var animation_player = $AnimationPlayer
-const SPEED = 500.0
+const SPEED = 120.0
 var last_dir = "d"
 
 func _physics_process(delta):

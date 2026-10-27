@@ -1,0 +1,288 @@
+[gd_scene format=3 uid="uid://cfi08ibj1j2ox"]
+
+[sub_resource type="Theme" id="Theme_eiy7p"]
+default_font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gnjq6"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="NameCharacterMenu" type="Control" unique_id=1007887519]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_eiy7p")
+
+[node name="Background" type="Panel" parent="." unique_id=754156136]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 320.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_gnjq6")
+
+[node name="Container" type="VBoxContainer" parent="." unique_id=1581855286]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -218.0
+offset_top = -77.0
+offset_right = 218.0
+offset_bottom = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Container" unique_id=1499966730]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Name the character."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Name" type="Label" parent="Container" unique_id=1157275164]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Keyboard" type="VBoxContainer" parent="Container" unique_id=2090603745]
+custom_minimum_size = Vector2(80, 90)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="row1" type="HBoxContainer" parent="Container/Keyboard" unique_id=1410350779]
+layout_mode = 2
+
+[node name="a" type="Button" parent="Container/Keyboard/row1" unique_id=1910109838]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "a"
+flat = true
+
+[node name="b" type="Button" parent="Container/Keyboard/row1" unique_id=1722159035]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "b"
+flat = true
+
+[node name="c" type="Button" parent="Container/Keyboard/row1" unique_id=2015420034]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "c"
+flat = true
+
+[node name="d" type="Button" parent="Container/Keyboard/row1" unique_id=1214433731]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "d"
+flat = true
+
+[node name="e" type="Button" parent="Container/Keyboard/row1" unique_id=1144735622]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "e"
+flat = true
+
+[node name="f" type="Button" parent="Container/Keyboard/row1" unique_id=922117164]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "f"
+flat = true
+
+[node name="g" type="Button" parent="Container/Keyboard/row1" unique_id=1092135787]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "g"
+flat = true
+
+[node name="h" type="Button" parent="Container/Keyboard/row1" unique_id=422292106]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "h"
+flat = true
+
+[node name="i" type="Button" parent="Container/Keyboard/row1" unique_id=2028525981]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "i"
+flat = true
+
+[node name="j" type="Button" parent="Container/Keyboard/row1" unique_id=550985017]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "j"
+flat = true
+
+[node name="row2" type="HBoxContainer" parent="Container/Keyboard" unique_id=2008498736]
+layout_mode = 2
+
+[node name="k" type="Button" parent="Container/Keyboard/row2" unique_id=759688927]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "k"
+flat = true
+
+[node name="l" type="Button" parent="Container/Keyboard/row2" unique_id=70788676]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "l"
+flat = true
+
+[node name="m" type="Button" parent="Container/Keyboard/row2" unique_id=981195939]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "m"
+flat = true
+
+[node name="n" type="Button" parent="Container/Keyboard/row2" unique_id=1519304263]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "n"
+flat = true
+
+[node name="o" type="Button" parent="Container/Keyboard/row2" unique_id=392276971]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "o"
+flat = true
+
+[node name="p" type="Button" parent="Container/Keyboard/row2" unique_id=1729282548]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "p"
+flat = true
+
+[node name="q" type="Button" parent="Container/Keyboard/row2" unique_id=1237146057]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "q"
+flat = true
+
+[node name="r" type="Button" parent="Container/Keyboard/row2" unique_id=1415548517]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "r"
+flat = true
+
+[node name="s" type="Button" parent="Container/Keyboard/row2" unique_id=739594596]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "s"
+flat = true
+
+[node name="t" type="Button" parent="Container/Keyboard/row2" unique_id=1839753962]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "t"
+flat = true
+
+[node name="row3" type="HBoxContainer" parent="Container/Keyboard" unique_id=924707512]
+layout_mode = 2
+
+[node name="u" type="Button" parent="Container/Keyboard/row3" unique_id=841526252]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "u"
+flat = true
+
+[node name="v" type="Button" parent="Container/Keyboard/row3" unique_id=1258536817]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "v"
+flat = true
+
+[node name="w" type="Button" parent="Container/Keyboard/row3" unique_id=844201108]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "w"
+flat = true
+
+[node name="x" type="Button" parent="Container/Keyboard/row3" unique_id=443062403]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "x"
+flat = true
+
+[node name="y" type="Button" parent="Container/Keyboard/row3" unique_id=611627401]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "y"
+flat = true
+
+[node name="z" type="Button" parent="Container/Keyboard/row3" unique_id=100232276]
+custom_minimum_size = Vector2(40, 20)
+custom_maximum_size = Vector2(40, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "z"
+flat = true
+
+[node name="back" type="Button" parent="Container/Keyboard/row3" unique_id=169969574]
+custom_minimum_size = Vector2(80, 20)
+custom_maximum_size = Vector2(80, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "BACK"
+flat = true
+
+[node name="end" type="Button" parent="Container/Keyboard/row3" unique_id=149116368]
+custom_minimum_size = Vector2(80, 20)
+custom_maximum_size = Vector2(80, 20)
+propagate_maximum_size = true
+layout_mode = 2
+text = "END"
+flat = true
