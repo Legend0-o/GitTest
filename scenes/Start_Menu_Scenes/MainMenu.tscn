@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dugb6c8lrtfog"]
 
+[ext_resource type="Script" uid="uid://ci4wqojucfp3b" path="res://scripts/main_menu.gd" id="1_gyp0e"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
 bg_color = Color(0, 0, 0, 1)
 
@@ -17,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gyp0e")
 
 [node name="Background" type="Panel" parent="." unique_id=180878641]
 layout_mode = 0
@@ -67,3 +70,7 @@ text = "Settings"
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_06t4h")
 text = "Exit"
+
+[connection signal="pressed" from="Container/Controls/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Container/Controls/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Container/Controls/Exit" to="." method="_on_exit_pressed"]

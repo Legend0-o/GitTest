@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bdshxqe40xfuj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snb8w"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="SettingsMenu" type="Control" unique_id=1391504016]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=593651960]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_snb8w")

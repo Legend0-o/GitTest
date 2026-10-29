@@ -17,8 +17,8 @@ theme = SubResource("Theme_eiy7p")
 
 [node name="Background" type="Panel" parent="." unique_id=754156136]
 layout_mode = 0
-offset_right = 480.0
-offset_bottom = 320.0
+offset_right = 640.0
+offset_bottom = 480.0
 pivot_offset = Vector2(240, 160)
 theme_override_styles/panel = SubResource("StyleBoxFlat_gnjq6")
 
