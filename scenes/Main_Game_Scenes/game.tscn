@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cuv4vme4rwno0"]
 
 [ext_resource type="Texture2D" uid="uid://do3e776i2ay1e" path="res://assets/sprites/TilesetV2.png" id="1_8gxep"]
+[ext_resource type="Script" uid="uid://5sl8rrr6jlgp" path="res://scenes/Main_Game_Scenes/game.gd" id="1_k75jl"]
 [ext_resource type="PackedScene" uid="uid://dqnaqj8yb6hwd" path="res://scenes/Misc/player.tscn" id="2_8gxep"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k75jl"]
@@ -232,7 +233,11 @@ texture_region_size = Vector2i(20, 20)
 tile_size = Vector2i(20, 20)
 sources/1 = SubResource("TileSetAtlasSource_k75jl")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqs1t"]
+size = Vector2(292, 181)
+
 [node name="Game" type="Node2D" unique_id=758122391]
+script = ExtResource("1_k75jl")
 
 [node name="background" type="TileMapLayer" parent="." unique_id=1877565808]
 use_parent_material = true
@@ -255,9 +260,16 @@ tile_set = SubResource("TileSet_lgqqw")
 [node name="Player" parent="." unique_id=232032478 instance=ExtResource("2_8gxep")]
 position = Vector2(121, -96)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1526751562]
-zoom = Vector2(3, 3)
-process_callback = 0
-limit_left = -1
-limit_bottom = 0
-limit_smoothed = true
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1666171086]
+unique_name_in_owner = true
+position = Vector2(121, -88)
+
+[node name="camera_capture" type="Area2D" parent="." unique_id=2013073773]
+
+[node name="Room" type="CollisionShape2D" parent="camera_capture" unique_id=80185774]
+light_mask = 0
+position = Vector2(152, -96)
+shape = SubResource("RectangleShape2D_pqs1t")
+
+[connection signal="body_entered" from="camera_capture" to="." method="_on_camera_capture_body_entered"]
+[connection signal="body_exited" from="camera_capture" to="." method="_on_camera_capture_body_exited"]
