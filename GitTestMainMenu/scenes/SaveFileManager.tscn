@@ -1,0 +1,457 @@
+[gd_scene format=3 uid="uid://u50rxe1cg3fq"]
+
+[ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="1_068lh"]
+
+[sub_resource type="Theme" id="Theme_p5m8i"]
+default_font = ExtResource("1_068lh")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snb8w"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p83rk"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5sygw"]
+content_margin_left = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p83rk"]
+content_margin_right = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_068lh"]
+content_margin_left = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5fh7u"]
+content_margin_left = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h7bbo"]
+content_margin_left = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ogq5b"]
+content_margin_left = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hmu5j"]
+content_margin_left = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8jbg"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1xfk"]
+
+[node name="SettingsMenu" type="Control" unique_id=1391504016]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_p5m8i")
+
+[node name="Background" type="Panel" parent="." unique_id=593651960]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+pivot_offset = Vector2(240, 160)
+theme_override_styles/panel = SubResource("StyleBoxFlat_snb8w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1082263116]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -150.0
+offset_right = 225.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ActionText" type="Label" parent="VBoxContainer" unique_id=268313011]
+layout_mode = 2
+text = "[ACTION TEXT]"
+
+[node name="Save1" type="Panel" parent="VBoxContainer" unique_id=1882327923]
+custom_minimum_size = Vector2(450, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p83rk")
+
+[node name="Container" type="VBoxContainer" parent="VBoxContainer/Save1" unique_id=661286980]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SaveInfo" type="HBoxContainer" parent="VBoxContainer/Save1/Container" unique_id=284665898]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayerName" type="Label" parent="VBoxContainer/Save1/Container/SaveInfo" unique_id=266512614]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5sygw")
+text = "EMPTY"
+vertical_alignment = 1
+
+[node name="Playtime" type="Label" parent="VBoxContainer/Save1/Container/SaveInfo" unique_id=1173007247]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_p83rk")
+text = "--:--"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Actions" type="Control" parent="VBoxContainer/Save1/Container" unique_id=920664212]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayGame" type="HBoxContainer" parent="VBoxContainer/Save1/Container/Actions" unique_id=933440831]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Start" type="Button" parent="VBoxContainer/Save1/Container/Actions/PlayGame" unique_id=69420824]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_068lh")
+text = "Start"
+alignment = 0
+
+[node name="Continue" type="Button" parent="VBoxContainer/Save1/Container/Actions/PlayGame" unique_id=870171073]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5fh7u")
+text = "Continue"
+alignment = 0
+
+[node name="Back" type="Button" parent="VBoxContainer/Save1/Container/Actions/PlayGame" unique_id=1211877771]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h7bbo")
+text = "Back"
+alignment = 0
+
+[node name="ConfirmAction" type="HBoxContainer" parent="VBoxContainer/Save1/Container/Actions" unique_id=1452106995]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Yes" type="Button" parent="VBoxContainer/Save1/Container/Actions/ConfirmAction" unique_id=1246200318]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ogq5b")
+text = "Yes"
+alignment = 0
+
+[node name="No" type="Button" parent="VBoxContainer/Save1/Container/Actions/ConfirmAction" unique_id=485035124]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hmu5j")
+text = "No"
+alignment = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Save1/Container/Actions" unique_id=1719714943]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f8jbg")
+text = "[ROOM NAME]"
+
+[node name="Save2" type="Panel" parent="VBoxContainer" unique_id=2143848665]
+custom_minimum_size = Vector2(450, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p83rk")
+
+[node name="Container" type="VBoxContainer" parent="VBoxContainer/Save2" unique_id=1693888187]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SaveInfo" type="HBoxContainer" parent="VBoxContainer/Save2/Container" unique_id=187942790]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayerName" type="Label" parent="VBoxContainer/Save2/Container/SaveInfo" unique_id=1849236341]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5sygw")
+text = "EMPTY"
+vertical_alignment = 1
+
+[node name="Playtime" type="Label" parent="VBoxContainer/Save2/Container/SaveInfo" unique_id=1583869582]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_p83rk")
+text = "--:--"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Actions" type="Control" parent="VBoxContainer/Save2/Container" unique_id=377763389]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayGame" type="HBoxContainer" parent="VBoxContainer/Save2/Container/Actions" unique_id=916626288]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Start" type="Button" parent="VBoxContainer/Save2/Container/Actions/PlayGame" unique_id=1319687594]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_068lh")
+text = "Start"
+alignment = 0
+
+[node name="Continue" type="Button" parent="VBoxContainer/Save2/Container/Actions/PlayGame" unique_id=83113584]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5fh7u")
+text = "Continue"
+alignment = 0
+
+[node name="Back" type="Button" parent="VBoxContainer/Save2/Container/Actions/PlayGame" unique_id=152889765]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h7bbo")
+text = "Back"
+alignment = 0
+
+[node name="ConfirmAction" type="HBoxContainer" parent="VBoxContainer/Save2/Container/Actions" unique_id=121243919]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Yes" type="Button" parent="VBoxContainer/Save2/Container/Actions/ConfirmAction" unique_id=2090343116]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ogq5b")
+text = "Yes"
+alignment = 0
+
+[node name="No" type="Button" parent="VBoxContainer/Save2/Container/Actions/ConfirmAction" unique_id=1523246122]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hmu5j")
+text = "No"
+alignment = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Save2/Container/Actions" unique_id=1980152309]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f8jbg")
+text = "[ROOM NAME]"
+
+[node name="Save3" type="Panel" parent="VBoxContainer" unique_id=721835453]
+custom_minimum_size = Vector2(450, 80)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p83rk")
+
+[node name="Container" type="VBoxContainer" parent="VBoxContainer/Save3" unique_id=1659138752]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SaveInfo" type="HBoxContainer" parent="VBoxContainer/Save3/Container" unique_id=1925683690]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayerName" type="Label" parent="VBoxContainer/Save3/Container/SaveInfo" unique_id=1521131227]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5sygw")
+text = "EMPTY"
+vertical_alignment = 1
+
+[node name="Playtime" type="Label" parent="VBoxContainer/Save3/Container/SaveInfo" unique_id=1740681244]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxEmpty_p83rk")
+text = "--:--"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Actions" type="Control" parent="VBoxContainer/Save3/Container" unique_id=1009050517]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayGame" type="HBoxContainer" parent="VBoxContainer/Save3/Container/Actions" unique_id=612694648]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Start" type="Button" parent="VBoxContainer/Save3/Container/Actions/PlayGame" unique_id=1799224790]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_068lh")
+text = "Start"
+alignment = 0
+
+[node name="Continue" type="Button" parent="VBoxContainer/Save3/Container/Actions/PlayGame" unique_id=1027306966]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5fh7u")
+text = "Continue"
+alignment = 0
+
+[node name="Back" type="Button" parent="VBoxContainer/Save3/Container/Actions/PlayGame" unique_id=215330557]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h7bbo")
+text = "Back"
+alignment = 0
+
+[node name="ConfirmAction" type="HBoxContainer" parent="VBoxContainer/Save3/Container/Actions" unique_id=1431367452]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_right = 223.0
+offset_bottom = 38.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Yes" type="Button" parent="VBoxContainer/Save3/Container/Actions/ConfirmAction" unique_id=1720883165]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ogq5b")
+text = "Yes"
+alignment = 0
+
+[node name="No" type="Button" parent="VBoxContainer/Save3/Container/Actions/ConfirmAction" unique_id=1978520023]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hmu5j")
+text = "No"
+alignment = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/Save3/Container/Actions" unique_id=512340635]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f8jbg")
+text = "[ROOM NAME]"
+
+[node name="ActionsBar" type="HBoxContainer" parent="VBoxContainer" unique_id=1845424285]
+layout_mode = 2
+
+[node name="Cancel" type="Button" parent="VBoxContainer/ActionsBar" unique_id=2146944883]
+visible = false
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s1xfk")
+text = "Cancel"
+
+[node name="Back" type="Button" parent="VBoxContainer/ActionsBar" unique_id=304456106]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s1xfk")
+text = "Back"
+
+[node name="Copy" type="Button" parent="VBoxContainer/ActionsBar" unique_id=891474151]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s1xfk")
+text = "Copy"
+
+[node name="Erase" type="Button" parent="VBoxContainer/ActionsBar" unique_id=941401387]
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s1xfk")
+text = "Erase"
